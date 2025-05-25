@@ -42,5 +42,3 @@ git push origin main
 :END
 echo done
 endlocal
-
-timeout /T 10
