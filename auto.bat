@@ -21,13 +21,13 @@ cd /d "%REPO_PATH%" || (
 @REM     goto :END
 @REM )
 
-:: 检查是否有文件更改
-git diff --quiet --exit-code && (
-    echo no change
-    goto :END
-) || (
-    echo has change today, good job...
-)
+@REM :: 检查是否有文件更改
+@REM git diff --quiet --exit-code && (
+@REM     echo no change
+@REM     goto :END
+@REM ) || (
+@REM     echo has change today, good job...
+@REM )
 
 :: 执行Git操作
 echo add...
